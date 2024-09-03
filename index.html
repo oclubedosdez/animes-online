@@ -20,61 +20,26 @@
 
 <body>
     <header>
-        <h1>Assista Animes</h1>
+        <h1>Buscar Anime</h1>
         <div class="input-wrapper">
-            <label for="filter" class="sr-only">Filter</label>
-            <input id="filter" type="text" placeholder="Filter">
+            <label for="filter" class="sr-only">Filtra</label>
+            <input id="filter" type="text" placeholder="Filtra">
             <i class="ph-magnifying-glass"></i>
         </div>
     </header>
     <main id="animes">
-        <a class="anime" href="http://">
-            <section class="imagen">
-                <img src="./imgs/Bleach.webp" alt="Anime Bleach">
-                <span class="lancamento">2024</span>
-                <span class="new_capitulo">new:123</span>
+        <a class="anime" id="caixa_vazia" href="./anime/index.html">
+            <section>
+                <img src="${anime.img}" alt="Anime ${anime.nome}">
+                <span class="lancamento">${anime.lancamento}</span>
+                <span class="new_capitulo">new:${anime.episodios}</span>
             </section>
-            <h1 title="Bleach: A Long and Descriptive Title That Will Be Truncated">Bleach: A Long and Descriptive Title
-                That Will Be Truncated</h1>
+            <h1 title="${anime.nome}">${anime.nome}</h1>
         </a>
-
-        <a class="anime" href="http://">
-            <section class="imagen">
-                <img src="./imgs/jujutsu no kaisen.jpg" alt="Anime Jujutsu no kaisen">
-                <span class="lancamento">2024</span>
-                <span class="new_capitulo">new:23</span>
-            </section>
-            <h1 title="Jujutsu no kaisen">Jujutsu no kaisen</h1>
-        </a>
-
-        <a class="anime" href="http://">
-            <section class="imagen">
-                <img src="./imgs/Boruto.jpg" alt="Anime Boruto">
-                <span class="lancamento">2024</span>
-                <span class="new_capitulo">new:223</span>
-            </section>
-            <h1 title="Boruto">Boruto</h1>
-        </a>
-
-        <a class="anime" href="http://">
-            <section class="imagen">
-                <img src="./imgs/Chiyu Mahou no Machigatta.jpg" alt="Anime Chiyu Mahou no Machigatta">
-                <span class="lancamento">2023</span>
-                <span class="new_capitulo">new:13</span>
-            </section>
-            <h1 title="Chiyu Mahou no Machigatta">Chiyu Mahou no Machigatta</h1>
-        </a>
-
-        <a class="anime" href="http://">
-            <section class="imagen">
-                <img src="./imgs/Tokyo Ghoul.webp" alt="Anime Tokyo Ghoul">
-                <span class="lancamento">2022</span>
-                <span class="new_capitulo">new:26</span>
-            </section>
-            <h1 title="Tokyo Ghoul">Tokyo Ghoul</h1>
-        </a>
-
     </main>
+    <footer>
+        <p>&copy; 2023 Seu Site de Animes. Todos os direitos reservados.</p>
+    </footer>
 </body>
 <script src="./assets/js/script.js"></script>
 </html>
