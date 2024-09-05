@@ -22,24 +22,19 @@
     <header>
         <h1>Buscar Anime</h1>
         <div class="input-wrapper">
-            <label for="filter" class="sr-only">Filtra</label>
             <input id="filter" type="text" placeholder="Filtra">
-            <i class="ph-magnifying-glass"></i>
         </div>
+        <button>Pesquisar</button>
     </header>
     <main id="animes">
-        <a class="anime" id="caixa_vazia" href="./anime/index.html">
-            <section>
-                <img src="${anime.img}" alt="Anime ${anime.nome}">
-                <span class="lancamento">${anime.lancamento}</span>
-                <span class="new_capitulo">new:${anime.episodios}</span>
-            </section>
-            <h1 title="${anime.nome}">${anime.nome}</h1>
+        <a id="caixa" href="./anime/index.html">
         </a>
     </main>
     <footer>
         <p>&copy; 2023 Seu Site de Animes. Todos os direitos reservados.</p>
     </footer>
 </body>
+<script src="./assets/js/animes.js"></script>
 <script src="./assets/js/script.js"></script>
+
 </html>
