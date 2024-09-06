@@ -19,6 +19,8 @@ function mostrarAnimes() {
             <p class='dublagem'>${anime.dublagem}</p>
             <p class='sinopse' style="display: none;">${anime.sinopse}</p>
             <p class='genero' style="display: none;">${anime.generos}</p>
+            <p class='autor' style="display: none;">${anime.autor}</p>
+            <p class='estudio' style="display: none;">${anime.estudio}</p>
         </div>
         `;
     }
@@ -55,6 +57,8 @@ function adicionarEventos() {
             const anime_dublagem = anime.querySelector('.dublagem').innerText;
             const anime_lancamento = anime.querySelector('.lancamento').innerText;
             const anime_img = anime.querySelector('img').src;
+            const anime_autor = anime.querySelector('.autor').innerText;
+            const anime_estudio = anime.querySelector('.estudio').innerText;
 
             // Mostra os detalhes do anime
             container_animes.innerHTML = `
@@ -67,6 +71,8 @@ function adicionarEventos() {
                 <section id="info">
                     <h1 id="Titulo">${anime_nome}</h1>
                     <p id="generos">Gêneros: ${anime_genero}</p>
+                    <p id="autor">Autor: ${anime_autor}</p>
+                    <p id="estudio">Estudio: ${anime_estudio}</p>
                     <p id="sinopse">${anime_sinopse}</p>
                     <p id="lancamento"><span id="dublagem">${anime_dublagem}</span><span id="lancado">${anime_lancamento}</span></p>
                 </section>

@@ -195,7 +195,7 @@ footer {
 #box_anime {
   position: relative;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   z-index: 10;
   overflow: hidden;
   width: 100%;
@@ -230,7 +230,6 @@ footer {
   /* border: 1px solid green; */
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
 }
 
 
@@ -241,11 +240,23 @@ footer {
   width: 100%;
   text-align: start;
 }
+#info #generos {
+  /* border: 1px solid white; */
+  width: 100%;
+  text-align: start;
+  padding: 0;
+}
+
+#info #estudio {
+  /* border: 1px solid white; */
+  width: 100%;
+  text-align: start;
+  padding: 0;
+}
 
 #info p {
   font-family: Lato;
   font-weight: bold;
-  margin-bottom: 1rem;
   font-size: 16px;
 }
 
