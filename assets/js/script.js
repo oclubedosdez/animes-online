@@ -35,7 +35,7 @@ function realizarBusca() {
     // Verificar se algum anime está visível após a filtragem
     let animesVisiveis = container_animes.querySelectorAll('.anime:not([style="display: none;"])');
     if (animesVisiveis.length === 0) {
-        container_animes.style.marginBottom = '28rem'
+        container_animes.style.height = '100vh'
     }
 }
 
@@ -56,7 +56,7 @@ inputBusca.addEventListener('input', () => {
         // Se estiver vazio, mostra todos os animes
         container_animes.querySelectorAll('.anime').forEach(anime => {
             anime.style.display = 'block';
-            container_animes.style.marginBottom = '3rem'
+            container_animes.style.height = '100%'
         });
     }
 });
