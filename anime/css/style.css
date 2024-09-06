@@ -10,6 +10,10 @@ body {
 body::-webkit-scrollbar {
     background-color: black;
 }
+body::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 10px;
+}
 
 
 #anime {

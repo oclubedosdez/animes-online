@@ -31,7 +31,14 @@ function realizarBusca() {
         const nomeAnime = anime.querySelector('h1').textContent.toLowerCase();
         anime.style.display = nomeAnime.includes(termoBusca) ? 'block' : 'none';
     });
+
+    // Verificar se algum anime está visível após a filtragem
+    let animesVisiveis = container_animes.querySelectorAll('.anime:not([style="display: none;"])');
+    if (animesVisiveis.length === 0) {
+        container_animes.style.marginBottom = '28rem'
+    }
 }
+
 
 // Adicionar evento de clique ao botão
 botaoBuscar.addEventListener('click', realizarBusca);
@@ -49,9 +56,12 @@ inputBusca.addEventListener('input', () => {
         // Se estiver vazio, mostra todos os animes
         container_animes.querySelectorAll('.anime').forEach(anime => {
             anime.style.display = 'block';
+            container_animes.style.marginBottom = '3rem'
         });
     }
 });
+
+
 
 
 
