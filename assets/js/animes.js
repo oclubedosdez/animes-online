@@ -40,7 +40,7 @@ let lista_animes = [
         "lancamento": 2023,
         "img": './imgs/Tokyo Ghoul.webp',
         "episodios": 26,
-        "sinopse" : 'Tokyo Ghoul Todos os Episodios Online, Assistir Tokyo Ghoul Anime Completo, Assistir Tokyo Ghoul Online.Estranhos assassinatos começam a acontecer em Tokyo. Devido a evidência líquida nos casos, a polícia concluiu que os ataques são resultados de uma criatura que se alimenta de outros seres, um “ghoul” do tipo “eater”. Dois amigos de faculdade, Kaneki e Hide, criam a teoria de que os ghouls estão imitando os humanos, por isso nunca são vistos ou capturados. Eles nem imaginam que essa teoria pode ser verdade e a coisa sairá do controle, pois Kaneki acaba se envolvendo, sem saber, com uma dessas criaturas, que ao atacar o garoto acaba morrendo acidentalmente, mas o deixa seriamente ferido e a ponto de morrer. A única salvação? Um transplante envolvendo a própria criatura, mas que poderá trazer consequências terríveis para Kaneki. O que acontecerá a partir de agora?',
+        "sinopse" : 'Estranhos assassinatos começam a acontecer em Tokyo. Devido a evidência líquida nos casos, a polícia concluiu que os ataques são resultados de uma criatura que se alimenta de outros seres, um “ghoul” do tipo “eater”. Dois amigos de faculdade, Kaneki e Hide, criam a teoria de que os ghouls estão imitando os humanos, por isso nunca são vistos ou capturados. Eles nem imaginam que essa teoria pode ser verdade e a coisa sairá do controle, pois Kaneki acaba se envolvendo, sem saber, com uma dessas criaturas, que ao atacar o garoto acaba morrendo acidentalmente, mas o deixa seriamente ferido e a ponto de morrer. A única salvação? Um transplante envolvendo a própria criatura, mas que poderá trazer consequências terríveis para Kaneki. O que acontecerá a partir de agora?',
         "generos" : 'Ação  Drama  Legendado  Mistério  Seinen  Sobrenatural  Terror',
         "dublagem" : 'Legendado',
     },
@@ -68,7 +68,7 @@ let lista_animes = [
         "lancamento": 2012,
         "img": "./imgs/SwordArtOnline.PNG",
         "episodios": 25,
-        "sinopse": "Milhares de jogadores ficam presos em um RPG online e a única forma de sair é completar o jogo. Kirito, um jogador habilidoso, deve encontrar uma maneira de escapar e salvar seus amigos.",
+        "sinopse": "Escapar é impossível até o jogo ser completado, um game over significa uma verdadeira morte. Sem saber a verdade da misteriosa nova geração do RPG, Sword Art Online, aproximadamente 10 mil jogadores logaram juntos, abrindo as cortinas para essa cruel batalha mortal. Jogando sozinho, o protagonista Kirito imediatamente aceitou a verdade desse RPG, e no mundo do jogo, em um castelo flutuante gigante chamado Aincrad, ele se distinguiu como um jogador solitário. Buscando completar o jogo alcançando o andar mais alto, Kirito arriscadamente continua sozinho. Por causa de um convite agressivo de uma guerreira e especialista em esgrima, Asuna, ele se juntou a ela. Esse encontro trouxe uma oportunidade para chamar pelo destinado Kirito.",
         "generos": "Ação Aventura Fantasia Sci-fi",
         "dublagem": "Legendado/Dublado"
     },

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
 body {
   text-align: center;
   background-color: rgb(68, 68, 68);
@@ -176,6 +178,188 @@ footer {
   font-size: 20px;
 }
 
-.anime_vazio {
-  border: 1px solid red;
+.aviso{
+  /* border: 1px solid red; */
+  color: red;
+  background-color: rgba(255, 255, 255, 0.705);
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto Condensed;
+  
+}
+/*informações anime*/
+#box_anime {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  z-index: 10;
+  overflow: hidden;
+  width: 100%;
+  
+  border: 5px;
+}
+
+#Imagen_banner {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: -20rem;
+  filter: brightness(50%) blur(5px);
+}
+
+#imagen {
+  /* background-color: rgb(43, 255, 0); */
+  padding: 0px;
+  width: 240px;
+  display: flex;
+  padding-top: 5px;
+}
+
+#imagen img {
+  width: 240px;
+  margin-bottom: 0;
+}
+
+#info {
+  /* border: 1px solid rgb(255, 255, 255); */
+  color: rgb(255, 255, 255);
+  /* border: 1px solid green; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+
+#info h1 {
+  margin-bottom: 10px;
+  font-family: Oswald;
+  font-size: 30px;
+  width: 100%;
+  text-align: start;
+}
+
+#info p {
+  font-family: Lato;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+#info p span {
+  /* border: 1px solid white; */
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: rgba(121, 121, 121, 0.61);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.192);
+}
+
+#info #sinopse {
+  display: inline-block !important;
+  width: 90%;
+  color: white;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  max-height: 100px;
+  overflow: auto;
+  border-radius: 10px;
+  padding-right: 15px;
+  font-size: 17px;
+}
+
+#info #sinopse::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.096);
+  width: 10px;
+}
+
+#info #sinopse::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 0, 0);
+  border-radius: 5px;
+}
+
+#fechar_banner {
+  border: 1px solid white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  left: 90rem;
+  top: 1rem;
+  font-family: Roboto Condensed;
+  padding: 1rem;
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+#box_episodios {
+  /* border: 1px solid red; */
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 5rem;
+}
+#box_episodios #episodios {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.60rem;
+}
+
+#box_episodios h2 {
+  font-family: Roboto Condensed;
+  color: rgb(197, 197, 197);
+  margin-bottom: 20px;
+}
+
+#box_episodios .episodio {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.5s;
+  background-color: rgb(44, 44, 44);
+  color: rgb(230, 230, 230);
+  width: 100%;
+  font-family: Roboto Condensed;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  word-spacing: 5px;
+  cursor: pointer;
+}
+
+#box_episodios .episodio span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  /* Cor de fundo do círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box_episodios .episodio span i {
+  color: black;
+}
+
+#box_episodios .episodio:hover {
+  background-color: rgb(66, 66, 66);
 }
