@@ -31,10 +31,10 @@ function buscarAnime() {
     let termoBusca = inputBusca.value.toLowerCase(); // Pega o texto que o usuário digitou
     let animes = document.querySelectorAll('.anime'); // Pega todos os animes que estão na tela
 
-    animes.forEach(anime => {
+    for(let anime of animes) {
         let nomeAnime = anime.querySelector('h1').textContent.toLowerCase(); // Nome do anime em letras minúsculas
         anime.style.display = nomeAnime.includes(termoBusca) ? 'block' : 'none'; // Mostra ou esconde o anime
-    });
+    }
 
     // Verifica se tem algum anime visível
     let animesVisiveis = document.querySelectorAll('.anime:not([style="display: none;"])');
@@ -47,7 +47,7 @@ function buscarAnime() {
 function adicionarEventos() {
     let animes = document.querySelectorAll('.anime'); // Pega todos os animes que estão na tela
 
-    animes.forEach(anime => {
+    for(let anime of animes) {
         anime.onclick = function() {
             const anime_nome = anime.querySelector('h1').innerText;
             const anime_genero = anime.querySelector('.genero').innerText;
@@ -92,7 +92,7 @@ function adicionarEventos() {
                 location.reload(); // Recarrega a página para voltar à lista de animes
             };
         };
-    });
+    }
 }
 
 // Adicionar eventos ao botão de busca e ao campo de input
