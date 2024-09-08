@@ -374,3 +374,10 @@ footer {
 #box_episodios .episodio:hover {
   background-color: rgb(66, 66, 66);
 }
+
+/*Abertura e encerramento*/
+#musica_anime {
+  visibility: hidden;
+  position: absolute;
+ 
+}

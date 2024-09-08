@@ -3,7 +3,6 @@ let container_animes = document.getElementById('animes');
 let inputBusca = document.getElementById('filter');
 let botaoBuscar = document.querySelector('button');
 
-
 // Função para mostrar todos os animes
 function mostrarAnimes() {
     let resultado = ""; // Guardar o HTML que vai ser mostrado
@@ -21,6 +20,8 @@ function mostrarAnimes() {
             <p class='genero' style="display: none;">${anime.generos}</p>
             <p class='autor' style="display: none;">${anime.autor}</p>
             <p class='estudio' style="display: none;">${anime.estudio}</p>
+            <p class='abertura' style="display: none;">${anime.abertura}</p>
+            <p class='encerramento' style="display: none;">${anime.encerramento}</p>
         </div>
         `;
     }
@@ -41,7 +42,7 @@ function buscarAnime() {
     // Verifica se tem algum anime visível
     let animesVisiveis = document.querySelectorAll('.anime:not([style="display: none;"])');
     if (animesVisiveis.length === 0) {
-        container_animes.innerHTML = `<div class="aviso"><h1>!Anime não encontrados</h1></div>`;
+        container_animes.innerHTML = `<div class="aviso"><h1>!Anime não encontrado</h1></div>`;
     }
 }
 
@@ -59,6 +60,8 @@ function adicionarEventos() {
             const anime_img = anime.querySelector('img').src;
             const anime_autor = anime.querySelector('.autor').innerText;
             const anime_estudio = anime.querySelector('.estudio').innerText;
+            const anime_abertura = anime.querySelector('.abertura').innerHTML;
+            const anime_encerramento = anime.querySelector('.encerramento').innerText;
 
             // Mostra os detalhes do anime
             container_animes.innerHTML = `
@@ -81,17 +84,61 @@ function adicionarEventos() {
             <div id="box_episodios">
                 <h2>Episódios</h2>
                 <div id="episodios">
-                    <p class="episodio">
-                    <span><i class="fas fa-play"></i></span>${anime_nome} - Episódio 01 - Postado 26 de fevereiro</p>
-                    <p class="episodio">
-                    <span><i class="fas fa-play"></i></span>${anime_nome} - Episódio 02 - Postado 26 de fevereiro</p>
+                    <p class="episodio" id="anime_abertura">
+                    <span><i class="fas fa-play"></i></span>${anime_nome} - Abertura - Postado 26 de fevereiro
+                    </p>
+                    <p class="episodio" id="anime_encerramento">
+                    <span><i class="fas fa-play anime_encerramento"></i></span>${anime_nome} - Encerramento - Postado 26 de fevereiro
+                    </p>
                 </div>
             </div>
+
+            <video id="musica_anime" src="./musicas/REINO DE ATENA   Versão Full  - The Lost Canvas.mp4" controls></video>
             `;
             
             // Oculta o header e altera o fundo
             document.querySelector('header').style.display = 'none';
             document.body.style.backgroundColor = 'rgb(29, 29, 29)';
+            let icone_play_abertura = document.querySelector('#anime_abertura i');
+            let icone_play_encerramento = document.querySelector('#anime_encerramento i');
+            let musica_anime = document.getElementById('musica_anime');
+
+            //função de abertura do anime
+            document.getElementById('anime_abertura').onclick = function() {
+                if (icone_play_abertura.classList.contains('fa-play')) {
+                    icone_play_abertura.classList.remove('fa-play');
+                    icone_play_abertura.classList.add('fa-pause');
+
+                    musica_anime.src = `./musicas/${anime_abertura}.mp4`;
+                    musica_anime.play();
+
+                    icone_play_encerramento.classList.remove('fa-pause');
+                    icone_play_encerramento.classList.add('fa-play');
+                } else {
+                    icone_play_abertura.classList.remove('fa-pause');
+                    icone_play_abertura.classList.add('fa-play');
+                    musica_anime.pause();
+                }
+            };
+
+            //função de encerramento do anime
+            document.getElementById('anime_encerramento').onclick = function() {
+                if (icone_play_encerramento.classList.contains('fa-play')) {
+                    icone_play_encerramento.classList.remove('fa-play');
+                    icone_play_encerramento.classList.add('fa-pause');
+
+                    musica_anime.src = `./musicas/${anime_encerramento}.mp4`;
+                    musica_anime.play();
+                   
+
+                    icone_play_abertura.classList.remove('fa-pause');
+                    icone_play_abertura.classList.add('fa-play');
+                } else {
+                    icone_play_encerramento.classList.remove('fa-pause');
+                    icone_play_encerramento.classList.add('fa-play');
+                    musica_anime.pause();
+                }
+            };
 
             // Função para fechar a visualização do anime
             document.getElementById('fechar_banner').onclick = function() {

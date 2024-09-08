@@ -8,7 +8,9 @@ let lista_animes = [
         "generos": 'Ação, Aventura, Fantasia',
         "dublagem": 'Legendado/Dublado',
         "estudio": 'Pierrot',
-        "autor": 'Tite Kubo'
+        "autor": 'Tite Kubo',
+        "abertura" : 'bleach thousand-year blood war',
+        "encerramento" : 'bleach thousand-year blood war'
     },
     {
         "nome": 'jujutsu no kaisen',
@@ -19,7 +21,9 @@ let lista_animes = [
         "generos": 'Ação, Demônios, Sobrenatural, Shounen',
         "dublagem": 'Legendado/Dublado',
         "estudio": 'MAPPA',
-        "autor": 'Gege Akutami'
+        "autor": 'Gege Akutami',
+        "abertura" : 'adasdsads',
+        "encerramento" : "dadsadsa"
     },
     {
         "nome": 'Boruto',
@@ -30,7 +34,9 @@ let lista_animes = [
         "generos": 'Ação, Artes Marciais, Aventura, Fantasia',
         "dublagem": 'Legendado/Dublado',
         "estudio": 'Studio Pierrot',
-        "autor": 'Ukyō Kodachi'
+        "autor": 'Ukyō Kodachi',
+        "abertura" : 'Boruto Opening 6   Teenage Dream',
+        "encerramento" : "Boruto Ending 18   Prologue"
     },
     {
         "nome": 'Chiyu Mahou no Machigatta',
@@ -41,7 +47,9 @@ let lista_animes = [
         "generos": 'Ação, Fantasia',
         "dublagem": 'Legendado',
         "estudio": 'White Fox',
-        "autor": 'Kurokata'
+        "autor": 'Kurokata',
+        "abertura" : 'adasdsads',
+        "encerramento" : "dadsadsa"
     },
     {
         "nome": 'Tokyo Ghoul',
@@ -52,7 +60,9 @@ let lista_animes = [
         "generos": 'Ação, Drama, Mistério, Sobrenatural',
         "dublagem": 'Legendado',
         "estudio": 'Pierrot',
-        "autor": 'Sui Ishida'
+        "autor": 'Sui Ishida',
+        "abertura" : 'adasdsads',
+        "encerramento" : "dadsadsa"
     },
     {
         "nome": "Jigoku Shoujo",
@@ -63,7 +73,9 @@ let lista_animes = [
         "generos": "Drama, Fantasia, Horror, Mistério, Sobrenatural",
         "dublagem": "Legendado",
         "estudio": "Studio Deen",
-        "autor": "Hiroshi Watanabe"
+        "autor": "Hiroshi Watanabe",
+        "abertura" : 'adasdsads',
+        "encerramento" : "dadsadsa"
     },
     {
         "nome": "Jojo's Bizarre Adventure Part 5",
@@ -74,7 +86,9 @@ let lista_animes = [
         "generos": "Ação, Aventura, Fantasia, Shounen, Sobrenatural",
         "dublagem": "Legendado/Dublado",
         "estudio": "David Production",
-        "autor": "Hirohiko Araki"
+        "autor": "Hirohiko Araki",
+        "abertura" : 'adasdsads',
+        "encerramento" : "dadsadsa"
     },
     {
         "nome": "Sword Art Online",
@@ -85,7 +99,9 @@ let lista_animes = [
         "generos": "Ação, Aventura, Drama, Fantasia, Romance",
         "dublagem": "Legendado/Dublado",
         "estudio": "A-1 Pictures",
-        "autor": "Reki Kawahara"
+        "autor": "Reki Kawahara",
+        "abertura" : 'adasdsads',
+        "encerramento" : "dadsadsa"
     },
     {
         "nome": "Os Cavaleiros do Zodíaco: The Lost Canvas",
@@ -96,7 +112,9 @@ let lista_animes = [
         "generos": "Ação, Aventura, Fantasia, Shounen",
         "dublagem": "Legendado/Dublado",
         "estudio": "TMS Entertainment",
-        "autor": "Shiori Teshirogi"
+        "autor": "Shiori Teshirogi",
+        "abertura" : 'REINO DE ATENA   Versão Full  - The Lost Canvas',
+        "encerramento" : 'Ending Saint Seiya The Lost Canvas Laços de Flor'
     },
     {
         "nome": "Digimon Adventure",
@@ -107,7 +125,9 @@ let lista_animes = [
         "generos": "Aventura, Comédia, Fantasia, Shounen",
         "dublagem": "Legendado/Dublado",
         "estudio": "Toei Animation",
-        "autor": "Akiyoshi Hongo"
+        "autor": "Akiyoshi Hongo",
+        "abertura" : 'adasdsads',
+        "encerramento" : "dadsadsa"
     },
 
     {
@@ -119,7 +139,9 @@ let lista_animes = [
         "generos": "Ação, Drama, Fantasia, Shounen",
         "dublagem": "Legendado/Dublado",
         "estudio": "Wit Studio",
-        "autor": "Hajime Isayama"
+        "autor": "Hajime Isayama",
+        "abertura" : 'adasdsads',
+        "encerramento" : "dadsadsa"
     },
     {
         "nome": "Fullmetal Alchemist: Brotherhood",
@@ -130,7 +152,9 @@ let lista_animes = [
         "generos": "Ação, Aventura, Fantasia, Shounen",
         "dublagem": "Legendado/Dublado",
         "estudio": "Bones",
-        "autor": "Hiromu Arakawa"
+        "autor": "Hiromu Arakawa",
+        "abertura" : 'Fullmetal Alchemist Brotherhood - Opening 2 [4K 60FPS   Creditless   CC]',
+        "encerramento" : "Fullmetal Alchemist Brotherhood - Ending 2 [4K 60FPS   Creditless   CC]"
     },
     {
         "nome": "One Punch Man",
@@ -141,7 +165,9 @@ let lista_animes = [
         "generos": "Ação, Comédia, Super Poderes, Seinen",
         "dublagem": "Legendado/Dublado",
         "estudio": "Madhouse",
-        "autor": "ONE"
+        "autor": "ONE",
+        "abertura" : 'One Punch Man - Opening 2',
+        "encerramento" : "One Punch Man - Ending 1"
     },
     {
         "nome": "My Hero Academia",
@@ -152,7 +178,9 @@ let lista_animes = [
         "generos": "Ação, Comédia, Fantasia, Shounen",
         "dublagem": "Legendado/Dublado",
         "estudio": "Bones",
-        "autor": "Kohei Horikoshi"
+        "autor": "Kohei Horikoshi",
+        "abertura" : 'adasdsads',
+        "encerramento" : "dadsadsa"
     },
     {
         "nome": "Demon Slayer: Kimetsu no Yaiba",
@@ -163,7 +191,9 @@ let lista_animes = [
         "generos": "Ação, Fantasia, Sobrenatural, Shounen",
         "dublagem": "Legendado/Dublado",
         "estudio": "ufotable",
-        "autor": "Koyoharu Gotouge"
+        "autor": "Koyoharu Gotouge",
+        "abertura" : 'Demon Slayer   OP    Gurenge  by LiSA HD',
+        "encerramento" : "Demon Slayer Kimetsu no Yaiba   season 2 ending song by Aimer"
     }
     
     
